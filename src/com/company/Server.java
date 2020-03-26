@@ -46,8 +46,6 @@ public class Server extends Thread {
             // проверяем на существование
             if(file.exists()){
                 System.out.println("File: Exists");
-                // логируем расположение файла
-                System.out.println("Absolute path:" + file.getAbsolutePath());
 
                 // проверяем на дерикторию
                 if (file.isDirectory()){
