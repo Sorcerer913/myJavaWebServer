@@ -37,7 +37,7 @@ public class Server extends Thread {
                 System.out.println(line);
             }
 
-            //TODO: обработка изображений
+            //TODO: обработка изображений и других запросов
 
             // Это нужно, чтобы попадать в директорию website
             uri = "website/"+uri;
