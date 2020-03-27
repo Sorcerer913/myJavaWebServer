@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.server.Server;
+
 import java.net.ServerSocket;
 
 public class Main {

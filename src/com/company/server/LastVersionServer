@@ -65,7 +65,30 @@ public class Server extends Thread {
                 }else{
                     // отправляем ответ
                     output.println("HTTP/1.1 200 OK");
-                    output.println("Content-Type: text/html; charset=utf-8");
+                    if (uri.split(".").length != 0)
+                    switch (uri.split(".")[uri.split(".").length-1]){
+                        case "html":
+                            output.println("Content-Type: text/html; charset=utf-8");
+                            break;
+                        case "png":
+                            output.println("Content-Type: image/png; charset=utf-8");
+                            break;
+                        case "jpg":
+                            output.println("Content-Type: image/jpg; charset=utf-8");
+                            break;
+                        case "jpeg":
+                            output.println("Content-Type: image/jpeg; charset=utf-8");
+                            break;
+                        case "gif":
+                            output.println("Content-Type: image/gif; charset=utf-8");
+                            break;
+                        case "js":
+                            output.println("Content-Type: text/js; charset=utf-8");
+                            break;
+                        case "css":
+                            output.println("Content-Type: text/css; charset=utf-8");
+                            break;
+                    } else ;    //todo
                     output.println();
 
                     // вывод файла
