@@ -93,19 +93,23 @@ public class Server extends Thread {
                 break;
             case "png":
                 output.println("HTTP/1.1 200 OK");
-                output.println("Content-Type: image/png; charset=utf-8");
+                output.println("Content-Type: image/png;");
                 break;
             case "jpg":
                 output.println("HTTP/1.1 200 OK");
-                output.println("Content-Type: image/jpg; charset=utf-8");
+                output.println("Content-Type: image/jpg;");
                 break;
             case "jpeg":
                 output.println("HTTP/1.1 200 OK");
-                output.println("Content-Type: image/jpeg; charset=utf-8");
+                output.println("Content-Type: image/jpeg;");
                 break;
             case "gif":
                 output.println("HTTP/1.1 200 OK");
-                output.println("Content-Type: image/gif; charset=utf-8");
+                output.println("Content-Type: image/gif;");
+                break;
+            case "ico":
+                output.println("HTTP/1.1 200 OK");
+                output.println("Content-Type: image/ico;");
                 break;
             case "js":
                 output.println("HTTP/1.1 200 OK");
